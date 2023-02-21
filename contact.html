@@ -9,19 +9,77 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="grid">
-    <div class="name">
+    <script src="scripts.js"></script>
+
+    <div class="name halfLeft">
         <h2>Jason Huynh</h2>
     </div>
 
-    <div class="nav">
+    <div class="nav halfRight">
         <h3><a href="about.html">About </a></h3>
         <h3><a href="work.html">Work</a></h3>
         <h3><a class="active" href="contact.html">Contacts & More</a></h3>
     </div>
 
     <div class="intro">
-        <h1 class="main blowup">📌 My Contacts</h1>
-        <h2>Available through the links below. Also dropped my resume here.</h2>
+        <h1 class="main">📌 My Contacts</h1>
+        <h2>Available through the links or message box below.</h2>
     </div>
+
+    <div class="info sixtySplit">
+        <br>
+        <a href="mailto: htujason@gmail.com" target="_blank">
+            <img class='footIcon' src="medium.svg" alt="email icon">
+        </a>
+        <p>My primary email to reach out to is htujason@gmail.com. Click the icon above to prompt a new mail or fill out the form below.</p>
+        <br>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+            <br><br>
+            <textarea rows = "5" cols = "56" id="msg"> Enter your message here...</textarea>
+            <br><br>
+            <button onclick="messaged()" style="width: 75px; height: 50px;">Send</button>
+        </form>
+
+        <br>
+        <a href="https://www.linkedin.com/in/htujason/" target="_blank">
+            <img class='footIcon' src="linkedin.svg" alt="linkedin icon">
+        </a>
+        <p>Connect with me on LinkedIn</p>
+
+        <br>
+        <a href="https://github.com/htujason" target="_blank">
+            <img class='footIcon' src="git.svg" alt="github icon">
+        </a>
+        <p>Find the code for my github projects here.</p>
+        <br>
+
+    </div>
+
+    <div class="fortySplit" style="display:flex; justify-content: center;">
+        <img src="portrait.jpg" alt="Self Portrait", id="portrait">
+    </div>
+
+    <div class="footer sixtySplit">
+        <h3>Feed my coffee addiction! or like actually reach out for serious inquiries by emailing - htujason@gmail.com</h3>
+    </div>
+
+    <div class="quicklinks fortySplit">
+        <a href="mailto: htujason@gmail.com" target="_blank">
+            <img class='footIcon' src="medium.svg" alt="email icon">
+        </a>
+        <a href="https://www.linkedin.com/in/htujason/" target="_blank">
+            <img class='footIcon' src="linkedin.svg" alt="linkedin icon">
+        </a>
+        <a href="https://github.com/htujason" target="_blank">
+            <img class='footIcon' src="git.svg" alt="github icon">
+        </a>
+    </div>
+
 </body>
 </html>
