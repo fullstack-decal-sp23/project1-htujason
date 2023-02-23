@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="styles.css">
 
     <script>
+        let name;
+        let email;
+        let msg;
+
         function messaged() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var msg = document.getElementById("msg").value;
+            name = document.getElementById("name").value;
+            email = document.getElementById("email").value;
+            msg = document.getElementById("msg").value;
             if (name == "") {
                 alert("Missing name");
             } else if (email == "") {
